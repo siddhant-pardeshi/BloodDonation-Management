@@ -35,7 +35,7 @@ The Dockerfile below is what makes this work on any container host.
 
    | Variable | Example |
    |---|---|
-   | `SPRING_DATASOURCE_URL` | `jdbc:mysql://<host>:<port>/<db>?useSSL=true&serverTimezone=UTC` |
+   | `SPRING_DATASOURCE_URL` | `jdbc:mysql://<host>:<port>/<db>?sslMode=REQUIRED&serverTimezone=UTC` |
    | `DB_USERNAME` | database user |
    | `DB_PASSWORD` | database password |
    | `SERVER_SERVLET_SESSION_COOKIE_SECURE` | `true` (required over HTTPS) |
