@@ -1,0 +1,566 @@
+/* ========== Pages Common Styles ========== */
+.page-container {
+  padding: 0;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-gray-900);
+}
+
+.page-header p {
+  font-size: 14px;
+  color: var(--color-gray-500);
+  margin-top: 2px;
+}
+
+.page-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--border-radius-sm);
+  padding: 10px 16px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-box svg {
+  color: var(--color-gray-400);
+  flex-shrink: 0;
+}
+
+.search-box input {
+  border: none;
+  background: none;
+  width: 100%;
+  font-size: 14px;
+  color: var(--color-gray-800);
+}
+
+.search-box input::placeholder {
+  color: var(--color-gray-400);
+}
+
+.result-count {
+  font-size: 13px;
+  color: var(--color-gray-500);
+}
+
+/* ========== Buttons ========== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--border-radius-sm);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+  box-shadow: 0 4px 12px rgba(192, 57, 43, 0.3);
+}
+
+.btn-secondary {
+  background: var(--color-gray-200);
+  color: var(--color-gray-700);
+}
+
+.btn-secondary:hover {
+  background: var(--color-gray-300);
+}
+
+.btn-icon {
+  background: none;
+  color: var(--color-gray-500);
+  padding: 6px;
+  border-radius: var(--border-radius-sm);
+  display: inline-flex;
+  align-items: center;
+  transition: all var(--transition-fast);
+}
+
+.btn-icon:hover {
+  background: var(--color-gray-100);
+  color: var(--color-gray-700);
+}
+
+.btn-icon-danger:hover {
+  background: var(--color-primary-bg);
+  color: var(--color-primary);
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ========== Table ========== */
+.table-container {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-gray-200);
+  overflow-x: auto;
+}
+
+/* ========== Modal ========== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.modal {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-xl);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.modal-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-gray-900);
+}
+
+.modal form {
+  padding: 24px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-gray-700);
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--border-radius-sm);
+  font-size: 14px;
+  color: var(--color-gray-800);
+  background: var(--color-gray-50);
+  transition: all var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.1);
+  background: var(--color-white);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+/* ========== Loading ========== */
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--color-gray-500);
+  font-size: 15px;
+}
+
+/* ========== Inventory Page ========== */
+.inventory-total-bar {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  border-radius: var(--border-radius-lg);
+  padding: 28px 32px;
+  margin-bottom: 28px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.total-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.total-number {
+  font-size: 36px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.total-label {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-left: 8px;
+}
+
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.inventory-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.inventory-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.inv-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.inv-blood-group {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-gray-800);
+}
+
+.inv-status {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.inv-card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.inv-units {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.inv-units-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  line-height: 1;
+}
+
+.inv-units-label {
+  font-size: 12px;
+  color: var(--color-gray-500);
+  margin-top: 4px;
+}
+
+.inv-bar {
+  height: 6px;
+  background: var(--color-gray-100);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.inv-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+.inv-card-footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--color-gray-100);
+}
+
+.inv-updated {
+  font-size: 11px;
+  color: var(--color-gray-400);
+}
+
+@media (max-width: 1200px) {
+  .inventory-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .inventory-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========== Camps Page ========== */
+.camps-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.camp-grid-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all var(--transition-normal);
+}
+
+.camp-grid-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.camp-grid-card.past {
+  opacity: 0.7;
+}
+
+.camp-grid-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camp-grid-info h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-gray-900);
+  margin-bottom: 8px;
+}
+
+.camp-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-gray-500);
+  margin-bottom: 4px;
+}
+
+.camp-grid-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-gray-100);
+}
+
+.camp-date-badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.camp-date-badge.upcoming {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+}
+
+.camp-date-badge.past-badge {
+  background: var(--color-gray-100);
+  color: var(--color-gray-500);
+}
+
+@media (max-width: 768px) {
+  .camps-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== My Donations: Eligibility Card ===== */
+.eligibility-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: var(--shadow-sm);
+  border-left: 5px solid var(--color-gray-300);
+  flex-wrap: wrap;
+}
+
+.eligibility-card.eligible {
+  border-left-color: var(--color-success);
+  background: linear-gradient(135deg, var(--color-success-bg), var(--color-white));
+}
+
+.eligibility-card.not-eligible {
+  border-left-color: var(--color-warning);
+  background: linear-gradient(135deg, var(--color-warning-bg), var(--color-white));
+}
+
+.eligibility-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.eligibility-left h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-gray-800);
+  margin-bottom: 4px;
+}
+
+.eligibility-left p {
+  font-size: 14px;
+  color: var(--color-gray-600);
+}
+
+.eligibility-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.eligibility-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.elig-label {
+  font-size: 12px;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.elig-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-gray-800);
+  margin-top: 4px;
+}
+
+.elig-value.blood {
+  background: var(--color-primary);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+
+/* ===== My Requests: Stats Row ===== */
+.my-requests-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mr-stat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.mr-stat svg {
+  flex-shrink: 0;
+}
+
+.mr-stat.pending svg {
+  color: var(--color-warning);
+}
+
+.mr-stat.approved svg {
+  color: var(--color-info);
+}
+
+.mr-stat.fulfilled svg {
+  color: var(--color-success);
+}
+
+.mr-stat div {
+  display: flex;
+  flex-direction: column;
+}
+
+.mr-num {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-gray-900);
+  line-height: 1;
+}
+
+.mr-label {
+  font-size: 13px;
+  color: var(--color-gray-500);
+  margin-top: 4px;
+}
+
+@media (max-width: 576px) {
+  .my-requests-stats {
+    grid-template-columns: 1fr;
+  }
+}

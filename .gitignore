@@ -1,0 +1,6 @@
+.metadata/
+.zcode/
+
+# Local study notes, not part of the project
+INTERVIEW_QA.md
+PROJECT_EXPLANATION.md
